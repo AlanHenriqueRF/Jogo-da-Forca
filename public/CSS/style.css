@@ -1,0 +1,88 @@
+body{
+    background-color: #FFFFFF;
+}
+
+
+.menu{
+    width: 100%;
+    display:flex;
+}
+
+.forca{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.forca img{
+    width: 96.7%;
+    max-width: 400px;
+    margin-top: 59px;
+    margin-left:  3.7%;
+    margin-right: auto;
+}
+
+
+.acao{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.acao button{
+    background-color: #27AE60;
+    width: 39.03%;
+    
+    max-width: 200px;
+    max-height: 60px;
+    height: 100%;
+    border-radius:8px;
+    border: none;
+    color: #FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 89px;
+    margin-right: 10.34%;
+    margin-left: auto;
+}
+
+.acao .palavra {
+    font-family: 'Noto Sans', sans-serif;
+
+    width: 63.02%;
+    max-width: 323px;
+    height: 63px;
+    font-size: 50px;
+    text-align: center;
+    font-weight: 700;
+    margin-right: 11.90%;
+    margin-top: auto;
+    margin-left: auto;
+    margin-bottom: 6%;
+}
+
+.rodape{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 81px;
+}
+
+.alfabeto{
+    width: 724px;
+}
+
+.alfabeto button{
+    width: 40px;
+    height: 40px;
+    background-color: #E1ECF4;
+    border: 1px solid #7AA7C7;
+    border-radius: 3px;
+    font-family: 'Roboto', sans-serif;
+    color: #39739D;
+    font-size: 16px;
+    font-weight: 700;
+    margin:11px 12px 0 0;
+}
