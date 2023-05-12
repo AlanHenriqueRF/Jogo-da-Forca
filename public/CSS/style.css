@@ -1,7 +1,11 @@
 body{
     background-color: #FFFFFF;
 }
-
+.pagina{
+    margin: auto;
+    height:839px;
+    width: 1025px;
+}
 
 .menu{
     width: 100%;
