@@ -6,7 +6,7 @@ import Letras from "./Letras"
 export default function App() {
     return (
         <div className="pagina">
-            <Jogo/>
+            <Jogo />
             <Letras/>
         </div>
     )

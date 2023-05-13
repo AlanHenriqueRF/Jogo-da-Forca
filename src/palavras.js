@@ -5,7 +5,7 @@ const palavras = [
     "dados", "dizer", "danone", "dente", "diamante", "diafragma", "detonar", "dia",
     "elefante", "esmeralda", "esfinge", "esfera", "encontro", "ema", "escola", "economia",
     "formiga", "fama", "festa", "fiador", "ferver", "flauta", "figo", "fiapo", "fotografia",
-    "goiaba","Guilherme","Grazielly", "Nrcirlene", "gelo", "grito", "guria", "goleiro", "golfinho", "golfe", "girar",
+    "goiaba","Guilherme","Grazielly", "Narcirlene", "gelo", "grito", "guria", "goleiro", "golfinho", "golfe", "girar",
     "harmonia", "haste", "hectare", "hepatite", "hiena", "hidrante",
     "igreja", "importante", "idoso", "irado", "identidade", "idioma", "idade", "idiota",
     "jantar", "jumento", "jararaca", "janela", "jerimum", "jaula", "jabuti", "jaleco",
