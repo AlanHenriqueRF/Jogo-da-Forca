@@ -1,17 +1,33 @@
-import forca from "./assets/forca0.png"
-// import cabeca from "./assets/forca1.png"
-// import corpo from "./assets/forca2.png"
-// import braco1 from "./assets/forca3.png"
-// import braco2 from "./assets/forca4.png"
-// import perna1 from "./assets/forca5.png"
-// import perna2 from "./assets/forca6.png"
+import React from "react";
+import Letras from "./Letras";
+let erros = 0
+let word;
 
-export default function Jogo() {
+export default function Jogo(props) {
+    let [imagem_forca, setImagem_erro] = React.useState(props.imagem[erros].link)
+    function sorteia(){
+        let num_ale = Math.floor(Math.random()*(props.palavra.length-0+1))+0;
+        return props.palavra[num_ale]
+    }
+    function habilita_letra() {
+        if (props.botao[0] === 'desabi') {
+            props.botao[0] = 'habi';
+            props.botao[1] = false;
+            props.set(<Letras />)}
+        
+        if (erros !== 0) {
+            erros = 0
+            setImagem_erro(props.imagem[erros].link)}
+
+        word = sorteia()
+        console.log(word)
+    }
+    
     return (
         <div className="menu">
-            <div className="forca"><img src={forca} alt="Imagem forca" /></div>
+            <div className="forca"><img src={imagem_forca} alt="Imagem forca" /></div>
             <div className="acao">
-                <button>Escolher palavra</button>
+                <button onClick={habilita_letra} >Escolher palavra</button>
                 <div className="palavra">_ua _e _ _e _a</div>
             </div>
         </div>

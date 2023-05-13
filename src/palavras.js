@@ -6,7 +6,7 @@ const palavras = [
     "elefante", "esmeralda", "esfinge", "esfera", "encontro", "ema", "escola", "economia",
     "formiga", "fama", "festa", "fiador", "ferver", "flauta", "figo", "fiapo", "fotografia",
     "goiaba","Guilherme","Grazielly", "Narcirlene", "gelo", "grito", "guria", "goleiro", "golfinho", "golfe", "girar",
-    "harmonia", "haste", "hectare", "hepatite", "hiena", "hidrante",
+    "harmonia", "haste", "hectare", "hepatite", "hiena", "hidrante", "Silva",
     "igreja", "importante", "idoso", "irado", "identidade", "idioma", "idade", "idiota",
     "jantar", "jumento", "jararaca", "janela", "jerimum", "jaula", "jabuti", "jaleco",
     "laranja", "lua", "luz", "lindo", "lacraia", "lactose", "lacrar",
@@ -21,6 +21,6 @@ const palavras = [
     "uva", "universo", "unanimidade", "ubuntu", "universidade", "urso", "uivar", "unir",
     "vela", "valeta", "vacilo", "valor", "vagem", "vadiagem", "vaca", "valentia", "vidro", "valsa",
     "xadrez", "xilofone", "xarope", "xenofobia", "xereta", "xerife", "xaveco", "xixi", "xale",
-    "zebra", "zagueiro", "zero", "zoeira", "zepelim", "zinco", "zumbido"
+    "zebra", "zagueiro", "zero", "zoeira", "zepelim", "zinco", "zumbido",'Fedora'
 ]
 export default palavras

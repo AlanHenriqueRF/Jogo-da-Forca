@@ -1,10 +1,8 @@
-export default function Letras() {
-    const alfabeto = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
-    // let letras = alfabeto.map(letra=><button className="desabi" key={letra} disabled>{letra.toUpperCase()}</button>)
+export default function Letras(props) {
     return (
         <div className="rodape">
             <ul className="alfabeto">
-                {alfabeto.map(letra=><li><button className="desabi" key={letra} disabled>{letra.toUpperCase()}</button></li>)}
+                {props.letra.map((item,index)=><li><button className={props.botao[0]} key={item} disabled={props.botao[1]}>{item.toUpperCase()}</button></li>)}
             </ul>
         </div>);
 }
