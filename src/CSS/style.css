@@ -1,3 +1,5 @@
+style.css
+
 body{
     background-color: #FFFFFF;
 }
@@ -52,9 +54,12 @@ body{
     margin-left: auto;
 }
 
+.some {
+    display: none;
+}
+
 .acao .palavra {
     font-family: 'Noto Sans', sans-serif;
-    display: none;
     width: 63.02%;
     max-width: 323px;
     height: 63px;

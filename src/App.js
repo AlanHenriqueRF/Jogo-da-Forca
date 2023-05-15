@@ -1,3 +1,4 @@
+
 import React from "react";
 import Jogo from "./Jogo"
 import Letras from "./Letras"
@@ -12,21 +13,33 @@ import perna2 from "./assets/forca6.png"
 
 
 const alfabeto = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
-const erros_corpo = [{erro:0, link:forca },
-    {erro:1,link:cabeca},
-    {erro:2,link:corpo},
-    {erro:3,link:braco1},
-    {erro:4,link:braco2},
-    {erro:5,link:perna1},
-    {erro:6,link:perna2}
+const erros_corpo = [{ link: forca },
+{ link: cabeca },
+{ link: corpo },
+{ link: braco1 },
+{ link: braco2 },
+{ link: perna1 },
+{ link: perna2 }
 ]
+let word;
+let list_word = []
+let underlines = []
 
 export default function App() {
-    let [desabilitado, setDesabilitado] = React.useState(['desabi',true]);
+    // let [desabilitado, setDesabilitado] = React.useState(['desabi', true]);
+    let [classe,setClasse] = React.useState('desabi');
+    let [desabilitado, setDesabilitado] = React.useState(true);
+    let [letra, setLetra] = React.useState(alfabeto.map((item,index)=>[item.toUpperCase(),index]));
+    // let [desabilitado, setDesabilitado] = React.useState(alfabeto.map((item,index)=>[item.toUpperCase(),'desabi', true,index]))
+    let [palavra_sorteada, setPalavra_sorteada] = React.useState(['palavra some', word, [list_word, underlines]]);
+    let [erros, setErros] = React.useState(0);
+    let [imagem_forca, setImagem_forca] = React.useState(erros_corpo[0].link)
+    
+    // console.log(palavra_sorteada)
     return (
         <div className="pagina">
-            <Jogo palavra = {palavras} botao={desabilitado} set = {setDesabilitado} imagem={erros_corpo}/>
-            <Letras letra={alfabeto} botao={desabilitado} />
+            <Jogo classe={classe} setClasse={setClasse} desabilitado={desabilitado} setDesabilitado={setDesabilitado} letra={letra} setLetra={setLetra} erros={erros} setErros={setErros} palavra={palavras} imagem_forca={imagem_forca} setImagem_forca ={setImagem_forca} palavra_sorteada={palavra_sorteada} setPalavra_sorteada={setPalavra_sorteada} />
+            <Letras classe={classe} setClasse={setClasse} desabilitado={desabilitado} setDesabilitado={setDesabilitado} letra={letra} setLetra={setLetra} erros={erros} setErros={setErros} palavra={palavras} imagem_forca={imagem_forca} setImagem_forca ={setImagem_forca} palavra_sorteada={palavra_sorteada} setPalavra_sorteada={setPalavra_sorteada} />
         </div>
     )
 }
