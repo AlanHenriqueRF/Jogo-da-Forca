@@ -27,6 +27,7 @@ export default function Jogo(props) {
 
         props.setDesabilitado(false)
         props.setClasse('habi')
+        props.global[0] = false
         // props
 
         // if (erros !== 0) {

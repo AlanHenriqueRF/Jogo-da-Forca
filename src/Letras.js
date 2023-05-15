@@ -15,7 +15,7 @@ export default function Letras(props) {
     return (
         <div className="rodape">
             <ul className="alfabeto">
-                {props.letra.map((item,index) => <Letter letra={item[0]} classe={props.classe} setClasse={props.setClasse} desabilitado={props.desabilitado} setDesabilitado={props.setDesabilitado}/>)}
+                {props.letra.map((item,index) => <Letter letra={item[0]} classe={props.classe} setClasse={props.setClasse} desabilitado={props.desabilitado} setDesabilitado={props.setDesabilitado} global={props.global}/>)}
                 {/* {props.botao.map((item,index)=><li><button className={item[1]} onClick={(index)=>props.set}  key={index} disabled={item[0]}>{item[0]}</button></li>)} */}
             </ul>
         </div>);
