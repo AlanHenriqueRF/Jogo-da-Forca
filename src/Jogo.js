@@ -34,14 +34,15 @@ export default function Jogo(props) {
 
         if (props.erros[0] !== 0) {
             props.erros[0] = 0
+            props.setErros(props.erros)
 
-            props.setImagem_forca(props.imagem_forca[props.erros[0]].link)
+            // props.setImagem_forca(props.imagem_forca[props.erros[0]].link)
         }
     }
 
     return (
         <div className="menu">
-            <div className="forca"><img src={props.imagem_forca} alt="Imagem forca" data-test="game-image" /></div>
+            <div className="forca"><img src={props.imagem_forca[props.erros].link} alt="Imagem forca" data-test="game-image" /></div>
             <div className="acao">
                 <button onClick={habilita_letra} data-test="choose-word" >Escolher palavra</button>
                 <div className={props.palavra_sorteada[0]} data-test="word">{props.palavra_sorteada[2][1]}</div>
