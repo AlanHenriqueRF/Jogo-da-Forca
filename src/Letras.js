@@ -1,22 +1,10 @@
 import Letter from './Letter'
 
 export default function Letras(props) {
-    // function clicouletra(i) {
-    //     let nova_array = []
-    //     if (i===props.botao[3]){
-    //         nova_array = [props.botao[0],'desabi',true,props.botao[3]]
-            
-    //     }
-    //     else{
-    //         nova_array = [props.botao]
-    //     }
-    //     props.set(nova_array)
-    // }
     return (
         <div className="rodape">
             <ul className="alfabeto">
-                {props.letra.map((item,index) => <Letter letra={item[0]} classe={props.classe} setClasse={props.setClasse} desabilitado={props.desabilitado} setDesabilitado={props.setDesabilitado} global={props.global}/>)}
-                {/* {props.botao.map((item,index)=><li><button className={item[1]} onClick={(index)=>props.set}  key={index} disabled={item[0]}>{item[0]}</button></li>)} */}
+                {props.letra.map((item,index) => <Letter letra={item[0]} classe={props.classe} setClasse={props.setClasse} desabilitado={props.desabilitado} setDesabilitado={props.setDesabilitado} setLetra={props.setLetra} erros={props.erros} setErros={props.setErros} palavra={props.palavras} imagem_forca={props.imagem_forca} setImagem_forca ={props.setImagem_forca} palavra_sorteada={props.palavra_sorteada} setPalavra_sorteada={props.setPalavra_sorteada} global={props.global}/>)}
             </ul>
         </div>);
 }

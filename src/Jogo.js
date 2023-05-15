@@ -29,11 +29,14 @@ export default function Jogo(props) {
         props.setClasse('habi')
         props.global[0] = false
         // props
+        // console.log(props.erros[0])
+        console.log(props.imagem_forca)
 
-        // if (erros !== 0) {
-        //     erros = 0
-        //     setImagem_erro(props.imagem[erros].link)
-        // }
+        if (props.erros[0] !== 0) {
+            props.erros[0] = 0
+
+            props.setImagem_forca(props.imagem_forca[props.erros[0]].link)
+        }
     }
 
     return (

@@ -31,8 +31,8 @@ export default function App() {
     let [letra, setLetra] = React.useState(alfabeto.map((item,index)=>[item.toUpperCase(),index]));
     // let [desabilitado, setDesabilitado] = React.useState(alfabeto.map((item,index)=>[item.toUpperCase(),'desabi', true,index]))
     let [palavra_sorteada, setPalavra_sorteada] = React.useState(['palavra some', word, [list_word, underlines]]);
-    let [erros, setErros] = React.useState(0);
-    let [imagem_forca, setImagem_forca] = React.useState(erros_corpo[0].link)
+    let [erros, setErros] = React.useState([3]);
+    let [imagem_forca, setImagem_forca] = React.useState(erros_corpo[erros].link)
 
 
     // console.log(palavra_sorteada)
